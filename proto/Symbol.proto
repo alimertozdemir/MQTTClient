@@ -1,0 +1,79 @@
+syntax = "proto2";
+
+package sample;
+
+option java_package = "com.alimert.common.proto";
+option java_outer_classname = "SymbolMessage";
+
+message SymbolMessage {
+  required sint32 symbolId = 1;
+  optional string symbolCode = 2; // sembol kodu
+  optional string symbolDesc = 3; // sembol açıklaması
+  optional string updateDate = 4; // date format: yyyy-MM-ddTHH:mm:ssZ
+  optional double bid = 5; // son alış fiyatı
+  optional double ask = 6; // son satış fiyatı
+  optional double low = 7; // seans içinde işlem gören en düşük fiyat
+  optional double high = 8; // seans içinde işlem gören en yüksek fiyat
+  optional double last = 9; // son fiyat (islem fiyati)
+  optional double dayClose = 10; // bir önceki günün kapanış fiyatı
+  optional int32  fractionCount = 11; // fiyat için virgülden sonraki basamak sayısı.
+  optional double dailyLow = 12; // gun içinde işlem gören en düşük fiyat
+  optional double dailyHigh = 13; // gun içinde işlem gören en yüksek fiyat
+  optional double quantity = 14; // işlem adedi
+  optional double volume = 15; // işlem hacmi
+  optional double difference = 16; // fark = işlem gören son fiyat - onceki gunun kapanis fiyati
+  optional double differencePercent = 17; // fark yuzdesi
+  optional double days7DifPer = 18; // 7 gunluk fark yuzdesi
+  optional double days30DifPer = 19; // 30 gunluk fark yuzdesi
+  optional double week52DifPer = 20; // 52 haftalik fark yuzdesi
+  optional double monthHigh = 21; // ay icindeki en yuksek deger
+  optional double monthLow = 22; // ay icindeki en dusuk deger
+  optional double yearHigh = 23; // yil icindeki en yuksek deger
+  optional double yearLow = 24; // yil icndeki en dusuk deger
+  optional double priceMean = 25; // gun icindeki agirlikli fiyat ortalamasi
+  optional double limitUp = 26; // tavan fiyat
+  optional double limitDown = 27; // taban fiyat
+  optional double netProceeds = 28; // Net Kar
+  optional double priceProceeds = 29; // F/K (Fiyat/Kazanç)
+  optional double marketValue = 30; // Piyasa Degeri
+  optional double marketValueUsd = 31; // Piyasa Degeri USD
+  optional double marValBookVal = 32; // PD/DD (Piyasa Değeri/Defter Değeri)
+  optional double equity = 33; // Özsermaye
+  optional double capital = 34; // Sermaye
+  optional double circulationShare = 35; // Dolasimdaki Pay
+  optional double circulationSharePer = 36; // Dolasimdaki pay yuzdesi
+  optional string symbolGroup = 37; // Sembol grubu A,B,C,D
+  optional double dailyVolume = 38; // Günlük işlem hacmi
+  optional bool   sessionIsOpen = 39; // true false
+  optional bool   openForTrade = 40; // true false
+  optional double priceStep = 41; // fiyat adimi
+  optional double basePrice = 42;
+  optional string symbolType = 43; // Symbol tipi
+  optional int32 tradeFraction = 44;
+  optional string stockSymbolCode = 45; // Sembolün borsa kodu
+  optional string tradeDate = 46;
+  optional double open = 47;
+  optional double dailyQuantity = 48; // Gün icing top lam lot (adet)
+  optional string actionType = 49;
+  optional int32 brutSwap = 50  [deprecated=true];
+  optional double totalTradeCount = 51;
+  optional double lastQuantity = 52; // Son işlem adedi
+  optional double weekLow = 53; // Haftalık Düşük
+  optional double weekHigh = 54; // Haftalık yüksek
+  optional double weekClose = 55; // Önceki hafta kapanış fiyatı
+  optional double monthClose = 56; // Önceki ay kapanış fiyatı
+  optional double yearClose = 57; // Önceki yıl kapanış fiyatı
+  optional string period = 58;
+  optional double shiftedNetProceed = 59;
+  optional int64 askSize = 60;
+  optional int64 bidSize = 61;
+  optional double eqPrice = 62;  // Teorik eşleşme fiyatı
+  optional double eqQuantity = 63; // Teorik eşleşme adet
+  optional double eqRemainingBidQuantity = 64; // Teorik eşleşme kalan alış adedi
+  optional double eqRemainingAskQuantity = 65; // Teorik eşleşme kalan satış adedi
+  optional double prevYearClose = 66;
+  optional int32  direction = 67;
+  optional double weekPriceMean = 68;
+  optional double monthPriceMean = 69;
+  optional double yearPriceMean = 70;
+}
