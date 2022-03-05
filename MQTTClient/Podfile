@@ -1,11 +1,8 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
 inhibit_all_warnings!
 use_frameworks!
 
 target 'MQTTClientmacOS' do
 	pod 'SocketRocket', '0.5.1'
-    pod GB
     
     target 'MQTTClientmacOSTests' do
         inherit! :search_paths

@@ -5,12 +5,12 @@ DEPENDENCIES:
   - SocketRocket (= 0.5.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - SocketRocket
 
 SPEC CHECKSUMS:
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: 73e91bcb203a07478c60370b1e539ae9a1ab79b5
+PODFILE CHECKSUM: 94e1247e1f8f883a280318255c18e3c193593791
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.9.3
