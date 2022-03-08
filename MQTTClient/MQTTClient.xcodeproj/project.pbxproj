@@ -178,15 +178,15 @@
 		C7E397991F0F71F1000C512E /* MQTTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E397981F0F71F1000C512E /* MQTTLog.m */; };
 		C7E3979A1F0F71F1000C512E /* MQTTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E397981F0F71F1000C512E /* MQTTLog.m */; };
 		C7E3979B1F0F71F1000C512E /* MQTTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E397981F0F71F1000C512E /* MQTTLog.m */; };
-		CCDDED0C27D2F6DC009E7FE8 /* Symbol.proto in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED0927D2F6DC009E7FE8 /* Symbol.proto */; };
-		CCDDED0D27D2F6DC009E7FE8 /* Symbol.proto in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED0927D2F6DC009E7FE8 /* Symbol.proto */; };
-		CCDDED0E27D2F6DC009E7FE8 /* Symbol.proto in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED0927D2F6DC009E7FE8 /* Symbol.proto */; };
-		CCDDED0F27D2F6DC009E7FE8 /* Symbol.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDDED0A27D2F6DC009E7FE8 /* Symbol.pbobjc.h */; };
-		CCDDED1027D2F6DC009E7FE8 /* Symbol.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDDED0A27D2F6DC009E7FE8 /* Symbol.pbobjc.h */; };
-		CCDDED1127D2F6DC009E7FE8 /* Symbol.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDDED0A27D2F6DC009E7FE8 /* Symbol.pbobjc.h */; };
-		CCDDED1227D2F6DC009E7FE8 /* Symbol.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED0B27D2F6DC009E7FE8 /* Symbol.pbobjc.m */; };
-		CCDDED1327D2F6DC009E7FE8 /* Symbol.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED0B27D2F6DC009E7FE8 /* Symbol.pbobjc.m */; };
-		CCDDED1427D2F6DC009E7FE8 /* Symbol.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED0B27D2F6DC009E7FE8 /* Symbol.pbobjc.m */; };
+		CCDDED2D27D8245A009E7FE8 /* Symbol.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED2A27D82459009E7FE8 /* Symbol.pbobjc.m */; };
+		CCDDED2E27D8245A009E7FE8 /* Symbol.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED2A27D82459009E7FE8 /* Symbol.pbobjc.m */; };
+		CCDDED2F27D8245A009E7FE8 /* Symbol.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED2A27D82459009E7FE8 /* Symbol.pbobjc.m */; };
+		CCDDED3027D8245A009E7FE8 /* Symbol.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDDED2B27D82459009E7FE8 /* Symbol.pbobjc.h */; };
+		CCDDED3127D8245A009E7FE8 /* Symbol.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDDED2B27D82459009E7FE8 /* Symbol.pbobjc.h */; };
+		CCDDED3227D8245A009E7FE8 /* Symbol.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDDED2B27D82459009E7FE8 /* Symbol.pbobjc.h */; };
+		CCDDED3327D8245A009E7FE8 /* Symbol.proto in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED2C27D8245A009E7FE8 /* Symbol.proto */; };
+		CCDDED3427D8245A009E7FE8 /* Symbol.proto in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED2C27D8245A009E7FE8 /* Symbol.proto */; };
+		CCDDED3527D8245A009E7FE8 /* Symbol.proto in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED2C27D8245A009E7FE8 /* Symbol.proto */; };
 		DE9EF5CE1C0628EB009EF667 /* MQTTDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 846191E81883E8B900101409 /* MQTTDecoder.m */; };
 		DE9EF5CF1C0628EB009EF667 /* MQTTCFSocketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 846191E91883E8B900101409 /* MQTTCFSocketEncoder.m */; };
 		DE9EF5D01C0628EB009EF667 /* MQTTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 846191EA1883E8B900101409 /* MQTTMessage.m */; };
@@ -426,9 +426,9 @@
 		C7E397981F0F71F1000C512E /* MQTTLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTLog.m; sourceTree = "<group>"; };
 		C994F5E5702C079ADD68318C /* Pods_MQTTClienttvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQTTClienttvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDD395E3B208DFCF6249B17 /* Pods-MQTTClientTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTClientTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTClientTVTests/Pods-MQTTClientTVTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CCDDED0927D2F6DC009E7FE8 /* Symbol.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Symbol.proto; sourceTree = "<group>"; };
-		CCDDED0A27D2F6DC009E7FE8 /* Symbol.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.pbobjc.h; sourceTree = "<group>"; };
-		CCDDED0B27D2F6DC009E7FE8 /* Symbol.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Symbol.pbobjc.m; sourceTree = "<group>"; };
+		CCDDED2A27D82459009E7FE8 /* Symbol.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Symbol.pbobjc.m; sourceTree = "<group>"; };
+		CCDDED2B27D82459009E7FE8 /* Symbol.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.pbobjc.h; sourceTree = "<group>"; };
+		CCDDED2C27D8245A009E7FE8 /* Symbol.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Symbol.proto; sourceTree = "<group>"; };
 		D7A5988C96EB2FBC4DE9A4D2 /* Pods_MQTTClientTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQTTClientTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3509554261781399096807 /* Pods-MQTTClienttvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTClienttvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTClienttvOSTests/Pods-MQTTClienttvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE9EF5C51C0628B1009EF667 /* MQTTClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQTTClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -656,7 +656,7 @@
 		8461912F1883E56800101409 /* MQTTClient */ = {
 			isa = PBXGroup;
 			children = (
-				CCDDED0827D2F69E009E7FE8 /* Proto */,
+				CCDDED2927D82440009E7FE8 /* Proto */,
 				846B90B61C15F982008A5D44 /* Transport */,
 				846B90B71C15F9B3008A5D44 /* Core */,
 				846B90B81C15F9D4008A5D44 /* Persistence */,
@@ -813,14 +813,14 @@
 			name = SessionManager;
 			sourceTree = "<group>";
 		};
-		CCDDED0827D2F69E009E7FE8 /* Proto */ = {
+		CCDDED2927D82440009E7FE8 /* Proto */ = {
 			isa = PBXGroup;
 			children = (
-				CCDDED0A27D2F6DC009E7FE8 /* Symbol.pbobjc.h */,
-				CCDDED0B27D2F6DC009E7FE8 /* Symbol.pbobjc.m */,
-				CCDDED0927D2F6DC009E7FE8 /* Symbol.proto */,
+				CCDDED2B27D82459009E7FE8 /* Symbol.pbobjc.h */,
+				CCDDED2A27D82459009E7FE8 /* Symbol.pbobjc.m */,
+				CCDDED2C27D8245A009E7FE8 /* Symbol.proto */,
 			);
-			path = Proto;
+			name = Proto;
 			sourceTree = "<group>";
 		};
 		D2FAD5DD1F715937B3A70FF5 /* Pods */ = {
@@ -885,7 +885,7 @@
 				84AA23321C6B913E009B153A /* MQTTLog.h in Headers */,
 				C7515EBD1F4C6A710071CFFE /* ForegroundReconnection.h in Headers */,
 				841D0AA31C358843006A82DC /* MQTTInMemoryPersistence.h in Headers */,
-				CCDDED0F27D2F6DC009E7FE8 /* Symbol.pbobjc.h in Headers */,
+				CCDDED3027D8245A009E7FE8 /* Symbol.pbobjc.h in Headers */,
 				841D0A9B1C358823006A82DC /* MQTTSSLSecurityPolicyEncoder.h in Headers */,
 				C7515EAF1F4C51600071CFFE /* ReconnectTimer.h in Headers */,
 				DE9EF5DB1C062907009EF667 /* MQTTPersistence.h in Headers */,
@@ -917,7 +917,7 @@
 				F6D08FCA1E535BF900CD2566 /* MQTTSessionLegacy.h in Headers */,
 				F6D08FC01E535BF900CD2566 /* MQTTSSLSecurityPolicyEncoder.h in Headers */,
 				F6D08FBF1E535BF900CD2566 /* MQTTSSLSecurityPolicyDecoder.h in Headers */,
-				CCDDED1127D2F6DC009E7FE8 /* Symbol.pbobjc.h in Headers */,
+				CCDDED3227D8245A009E7FE8 /* Symbol.pbobjc.h in Headers */,
 				F6D08FC51E535BF900CD2566 /* MQTTCFSocketTransport.h in Headers */,
 				F6D08FCE1E535BF900CD2566 /* MQTTSessionManager.h in Headers */,
 				C7515EBF1F4C6A710071CFFE /* ForegroundReconnection.h in Headers */,
@@ -947,7 +947,7 @@
 				F6D090021E535F2F00CD2566 /* MQTTClient.h in Headers */,
 				842951DA1EA7947F0066C044 /* MQTTProperties.h in Headers */,
 				F6D08FFF1E535F2A00CD2566 /* MQTTCoreDataPersistence.h in Headers */,
-				CCDDED1027D2F6DC009E7FE8 /* Symbol.pbobjc.h in Headers */,
+				CCDDED3127D8245A009E7FE8 /* Symbol.pbobjc.h in Headers */,
 				F6D08FFD1E535F2A00CD2566 /* MQTTSessionLegacy.h in Headers */,
 				F6D090031E535F2F00CD2566 /* MQTTLog.h in Headers */,
 				C7515EBE1F4C6A710071CFFE /* ForegroundReconnection.h in Headers */,
@@ -1440,6 +1440,8 @@
 				84A592181C3C64A9008C5199 /* MQTTSSLSecurityPolicy.m in Sources */,
 				84A592191C3C64A9008C5199 /* MQTTSSLSecurityPolicyDecoder.m in Sources */,
 				84A5921A1C3C64A9008C5199 /* MQTTSSLSecurityPolicyEncoder.m in Sources */,
+				CCDDED2D27D8245A009E7FE8 /* Symbol.pbobjc.m in Sources */,
+				CCDDED3327D8245A009E7FE8 /* Symbol.proto in Sources */,
 				840D3CED1F264AE20072019B /* MQTTStrict.m in Sources */,
 				84A5921B1C3C64A9008C5199 /* MQTTSSLSecurityPolicyTransport.m in Sources */,
 				C701E33B1FB0A70600B0CEB5 /* GCDTimer.m in Sources */,
@@ -1451,8 +1453,6 @@
 				845922A91C175AA400CCE27E /* MQTTCFSocketTransport.m in Sources */,
 				DE9EF5CF1C0628EB009EF667 /* MQTTCFSocketEncoder.m in Sources */,
 				84A592171C3C5343008C5199 /* MQTTTransport.m in Sources */,
-				CCDDED1227D2F6DC009E7FE8 /* Symbol.pbobjc.m in Sources */,
-				CCDDED0C27D2F6DC009E7FE8 /* Symbol.proto in Sources */,
 				C7B262ED2191CCC90054AA6F /* MQTTWebsocketTransport.m in Sources */,
 				DE9EF5D01C0628EB009EF667 /* MQTTMessage.m in Sources */,
 				DE9EF5D31C0628EB009EF667 /* MQTTSessionManager.m in Sources */,
@@ -1471,6 +1471,8 @@
 				F6D08FAC1E535BCB00CD2566 /* MQTTTransport.m in Sources */,
 				F6D08FAD1E535BCB00CD2566 /* MQTTSSLSecurityPolicy.m in Sources */,
 				F6D08FAE1E535BCB00CD2566 /* MQTTSSLSecurityPolicyDecoder.m in Sources */,
+				CCDDED2F27D8245A009E7FE8 /* Symbol.pbobjc.m in Sources */,
+				CCDDED3527D8245A009E7FE8 /* Symbol.proto in Sources */,
 				840D3CEF1F264AE40072019B /* MQTTStrict.m in Sources */,
 				F6D08FAF1E535BCB00CD2566 /* MQTTSSLSecurityPolicyEncoder.m in Sources */,
 				C701E33D1FB0A70600B0CEB5 /* GCDTimer.m in Sources */,
@@ -1482,8 +1484,6 @@
 				F6D08FB61E535BCB00CD2566 /* MQTTMessage.m in Sources */,
 				F6D08FB71E535BCB00CD2566 /* MQTTSession.m in Sources */,
 				C7B262EF2191CCCA0054AA6F /* MQTTWebsocketTransport.m in Sources */,
-				CCDDED1427D2F6DC009E7FE8 /* Symbol.pbobjc.m in Sources */,
-				CCDDED0E27D2F6DC009E7FE8 /* Symbol.proto in Sources */,
 				F6D08FB91E535BCB00CD2566 /* MQTTSessionLegacy.m in Sources */,
 				F6D08FBA1E535BCB00CD2566 /* MQTTCoreDataPersistence.m in Sources */,
 				F6D08FBB1E535BCB00CD2566 /* MQTTInMemoryPersistence.m in Sources */,
@@ -1502,6 +1502,8 @@
 				F6D08FE11E535F1000CD2566 /* MQTTTransport.m in Sources */,
 				F6D08FE21E535F1000CD2566 /* MQTTSSLSecurityPolicy.m in Sources */,
 				F6D08FE31E535F1000CD2566 /* MQTTSSLSecurityPolicyDecoder.m in Sources */,
+				CCDDED2E27D8245A009E7FE8 /* Symbol.pbobjc.m in Sources */,
+				CCDDED3427D8245A009E7FE8 /* Symbol.proto in Sources */,
 				840D3CEE1F264AE30072019B /* MQTTStrict.m in Sources */,
 				F6D08FE41E535F1000CD2566 /* MQTTSSLSecurityPolicyEncoder.m in Sources */,
 				C701E33C1FB0A70600B0CEB5 /* GCDTimer.m in Sources */,
@@ -1513,8 +1515,6 @@
 				F6D08FEA1E535F1000CD2566 /* MQTTMessage.m in Sources */,
 				F6D08FEB1E535F1000CD2566 /* MQTTSession.m in Sources */,
 				C7B262EE2191CCCA0054AA6F /* MQTTWebsocketTransport.m in Sources */,
-				CCDDED1327D2F6DC009E7FE8 /* Symbol.pbobjc.m in Sources */,
-				CCDDED0D27D2F6DC009E7FE8 /* Symbol.proto in Sources */,
 				F6D08FED1E535F1000CD2566 /* MQTTSessionLegacy.m in Sources */,
 				F6D08FEE1E535F1000CD2566 /* MQTTCoreDataPersistence.m in Sources */,
 				F6D08FEF1E535F1000CD2566 /* MQTTInMemoryPersistence.m in Sources */,
