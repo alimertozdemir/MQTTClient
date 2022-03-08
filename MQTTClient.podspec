@@ -43,8 +43,7 @@ Pod::Spec.new do |mqttc|
 					"MQTTClient/MQTTClient/MQTTSessionLegacy.{h,m}",
 					"MQTTClient/MQTTClient/MQTTSessionSynchron.{h,m}",
 					"MQTTClient/MQTTClient/MQTTTransport.{h,m}",
-					"MQTTClient/MQTTClient/GCDTimer.{h,m}",
-					"MQTTClient/MQTTClient/Proto/Symbol.pbobjc.{h,m}"
+					"MQTTClient/MQTTClient/GCDTimer.{h,m}"
 	end
 
 	mqttc.subspec 'MinL' do |minl|
@@ -70,8 +69,7 @@ Pod::Spec.new do |mqttc|
 					"MQTTClient/MQTTClient/MQTTSessionLegacy.{h,m}",
 					"MQTTClient/MQTTClient/MQTTSessionSynchron.{h,m}",
 					"MQTTClient/MQTTClient/MQTTTransport.{h,m}",
-					"MQTTClient/MQTTClient/GCDTimer.{h,m}",
-					"MQTTClient/MQTTClient/Proto/Symbol.pbobjc.{h,m}"
+					"MQTTClient/MQTTClient/GCDTimer.{h,m}"
 		minl.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'LUMBERJACK=1' }
 	end
 
@@ -105,5 +103,13 @@ Pod::Spec.new do |mqttc|
 		wsl.requires_arc = true
 		wsl.libraries = "icucore"
 		wsl.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'LUMBERJACK=1' }
+	end
+
+	mqttc.subspec 'Proto' do |proto|
+		proto.source_files =	"MQTTClient/MQTTClient/Proto/Symbol.pbobjc.{h,m}"
+		proto.dependency 'Protobuf'
+		proto.requires_arc = true
+		proto.libraries = "icucore"
+		proto.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1 ' }
 	end
 end
