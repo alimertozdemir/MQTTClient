@@ -1,5 +1,5 @@
 framework module Protobuf {
-  umbrella header "Protobuf-umbrella.h"
+  umbrella header "Protobuf-macOS-umbrella.h"
 
   export *
   module * { export * }

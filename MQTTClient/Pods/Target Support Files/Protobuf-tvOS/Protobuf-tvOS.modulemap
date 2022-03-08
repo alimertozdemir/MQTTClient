@@ -1,0 +1,6 @@
+framework module Protobuf {
+  umbrella header "Protobuf-tvOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
