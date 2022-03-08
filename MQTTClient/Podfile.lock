@@ -1,16 +1,20 @@
 PODS:
+  - Protobuf (3.17.0)
   - SocketRocket (0.5.1)
 
 DEPENDENCIES:
+  - Protobuf
   - SocketRocket (= 0.5.1)
 
 SPEC REPOS:
   trunk:
+    - Protobuf
     - SocketRocket
 
 SPEC CHECKSUMS:
+  Protobuf: 7327d4444215b5f18e560a97f879ff5503c4581c
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: 94e1247e1f8f883a280318255c18e3c193593791
+PODFILE CHECKSUM: 1d14b6820b4982e8dd676d9d170153829e34a541
 
 COCOAPODS: 1.9.3
