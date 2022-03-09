@@ -20,6 +20,7 @@ Pod::Spec.new do |mqttc|
 	mqttc.subspec "Core" do |core|
 		core.dependency "MQTTClient/Min"
 		core.dependency "MQTTClient/Manager"
+		core.dependency "MQTTClient/Websocket"
 		core.dependency "MQTTClient/Proto"
 	end
 
