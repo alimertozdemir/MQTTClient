@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'MQTTClientmacOS' do
 	pod 'SocketRocket', '0.5.1'
-        pod 'Protobuf'
+  pod 'Protobuf'
 
     target 'MQTTClientmacOSTests' do
         inherit! :search_paths

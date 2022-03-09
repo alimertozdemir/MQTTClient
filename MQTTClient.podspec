@@ -15,101 +15,103 @@ Pod::Spec.new do |mqttc|
 	mqttc.ios.deployment_target = "6.1"
 	mqttc.osx.deployment_target = "10.10"
 	mqttc.tvos.deployment_target = "9.0"
-	mqttc.default_subspec = 'Core'
+	mqttc.default_subspec = "Core"
 
-	mqttc.subspec 'Core' do |core|
-		core.dependency 'MQTTClient/Min'
-		core.dependency 'MQTTClient/Manager'
+	mqttc.subspec "Core" do |core|
+		core.dependency "MQTTClient/Min"
+		core.dependency "MQTTClient/Manager"
 	end
 
-	mqttc.subspec 'Min' do |min|
-		min.source_files =	"MQTTClient/MQTTClient/MQTTCFSocketDecoder.{h,m}",
-					"MQTTClient/MQTTClient/MQTTCFSocketEncoder.{h,m}",
-					"MQTTClient/MQTTClient/MQTTCFSocketTransport.{h,m}",
-					"MQTTClient/MQTTClient/MQTTCoreDataPersistence.{h,m}",
-					"MQTTClient/MQTTClient/MQTTDecoder.{h,m}",
-					"MQTTClient/MQTTClient/MQTTInMemoryPersistence.{h,m}",
-					"MQTTClient/MQTTClient/MQTTLog.{h,m}",
-					"MQTTClient/MQTTClient/MQTTStrict.{h,m}",
-					"MQTTClient/MQTTClient/MQTTClient.h",
-					"MQTTClient/MQTTClient/MQTTMessage.{h,m}",
-					"MQTTClient/MQTTClient/MQTTPersistence.h",
-					"MQTTClient/MQTTClient/MQTTSSLSecurityPolicy.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSSLSecurityPolicyDecoder.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSSLSecurityPolicyEncoder.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSSLSecurityPolicyTransport.{h,m}",
-					"MQTTClient/MQTTClient/MQTTProperties.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSession.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSessionLegacy.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSessionSynchron.{h,m}",
-					"MQTTClient/MQTTClient/MQTTTransport.{h,m}",
-					"MQTTClient/MQTTClient/GCDTimer.{h,m}"
+	mqttc.subspec "Min" do |min|
+		min.source_files =	"MQTTClient/MQTTCFSocketDecoder.{h,m}",
+					"MQTTClient/MQTTCFSocketEncoder.{h,m}",
+					"MQTTClient/MQTTCFSocketTransport.{h,m}",
+					"MQTTClient/MQTTCoreDataPersistence.{h,m}",
+					"MQTTClient/MQTTDecoder.{h,m}",
+					"MQTTClient/MQTTInMemoryPersistence.{h,m}",
+					"MQTTClient/MQTTLog.{h,m}",
+					"MQTTClient/MQTTStrict.{h,m}",
+					"MQTTClient/MQTTClient.h",
+					"MQTTClient/MQTTMessage.{h,m}",
+					"MQTTClient/MQTTPersistence.h",
+					"MQTTClient/MQTTSSLSecurityPolicy.{h,m}",
+					"MQTTClient/MQTTSSLSecurityPolicyDecoder.{h,m}",
+					"MQTTClient/MQTTSSLSecurityPolicyEncoder.{h,m}",
+					"MQTTClient/MQTTSSLSecurityPolicyTransport.{h,m}",
+					"MQTTClient/MQTTProperties.{h,m}",
+					"MQTTClient/MQTTSession.{h,m}",
+					"MQTTClient/MQTTSessionLegacy.{h,m}",
+					"MQTTClient/MQTTSessionSynchron.{h,m}",
+					"MQTTClient/MQTTTransport.{h,m}",
+					"MQTTClient/GCDTimer.{h,m}"
 	end
 
-	mqttc.subspec 'MinL' do |minl|
-		minl.dependency 'CocoaLumberjack'
+	mqttc.subspec "MinL" do |minl|
+		minl.dependency "CocoaLumberjack"
 
-		minl.source_files =	"MQTTClient/MQTTClient/MQTTCFSocketDecoder.{h,m}",
-					"MQTTClient/MQTTClient/MQTTCFSocketEncoder.{h,m}",
-					"MQTTClient/MQTTClient/MQTTCFSocketTransport.{h,m}",
-					"MQTTClient/MQTTClient/MQTTCoreDataPersistence.{h,m}",
-					"MQTTClient/MQTTClient/MQTTDecoder.{h,m}",
-					"MQTTClient/MQTTClient/MQTTInMemoryPersistence.{h,m}",
-					"MQTTClient/MQTTClient/MQTTLog.{h,m}",
-					"MQTTClient/MQTTClient/MQTTStrict.{h,m}",
-					"MQTTClient/MQTTClient/MQTTClient.h",
-					"MQTTClient/MQTTClient/MQTTMessage.{h,m}",
-					"MQTTClient/MQTTClient/MQTTPersistence.h",
-					"MQTTClient/MQTTClient/MQTTSSLSecurityPolicy.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSSLSecurityPolicyDecoder.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSSLSecurityPolicyEncoder.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSSLSecurityPolicyTransport.{h,m}",
-					"MQTTClient/MQTTClient/MQTTProperties.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSession.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSessionLegacy.{h,m}",
-					"MQTTClient/MQTTClient/MQTTSessionSynchron.{h,m}",
-					"MQTTClient/MQTTClient/MQTTTransport.{h,m}",
-					"MQTTClient/MQTTClient/GCDTimer.{h,m}"
-		minl.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'LUMBERJACK=1' }
+		minl.source_files =	"MQTTClient/MQTTCFSocketDecoder.{h,m}",
+					"MQTTClient/MQTTCFSocketEncoder.{h,m}",
+					"MQTTClient/MQTTCFSocketTransport.{h,m}",
+					"MQTTClient/MQTTCoreDataPersistence.{h,m}",
+					"MQTTClient/MQTTDecoder.{h,m}",
+					"MQTTClient/MQTTInMemoryPersistence.{h,m}",
+					"MQTTClient/MQTTLog.{h,m}",
+					"MQTTClient/MQTTStrict.{h,m}",
+					"MQTTClient/MQTTClient.h",
+					"MQTTClient/MQTTMessage.{h,m}",
+					"MQTTClient/MQTTPersistence.h",
+					"MQTTClient/MQTTSSLSecurityPolicy.{h,m}",
+					"MQTTClient/MQTTSSLSecurityPolicyDecoder.{h,m}",
+					"MQTTClient/MQTTSSLSecurityPolicyEncoder.{h,m}",
+					"MQTTClient/MQTTSSLSecurityPolicyTransport.{h,m}",
+					"MQTTClient/MQTTProperties.{h,m}",
+					"MQTTClient/MQTTSession.{h,m}",
+					"MQTTClient/MQTTSessionLegacy.{h,m}",
+					"MQTTClient/MQTTSessionSynchron.{h,m}",
+					"MQTTClient/MQTTTransport.{h,m}",
+					"MQTTClient/GCDTimer.{h,m}"
+		minl.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "LUMBERJACK=1" }
 	end
 
-	mqttc.subspec 'Manager' do |manager|
-		manager.source_files =	"MQTTClient/MQTTClient/MQTTSessionManager.{h,m}",
-					"MQTTClient/MQTTClient/ReconnectTimer.{h,m}",
-					"MQTTClient/MQTTClient/ForegroundReconnection.{h,m}"
-		manager.dependency 'MQTTClient/Min'
+	mqttc.subspec "Manager" do |manager|
+		manager.source_files =	"MQTTClient/MQTTSessionManager.{h,m}",
+					"MQTTClient/ReconnectTimer.{h,m}",
+					"MQTTClient/ForegroundReconnection.{h,m}"
+		manager.dependency "MQTTClient/Min"
 	end
 
-	mqttc.subspec 'ManagerL' do |managerl|
-		managerl.source_files =	"MQTTClient/MQTTClient/MQTTSessionManager.{h,m}",
-					"MQTTClient/MQTTClient/ReconnectTimer.{h,m}",
-					"MQTTClient/MQTTClient/ForegroundReconnection.{h,m}"
-		managerl.dependency 'MQTTClient/MinL'
-		managerl.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'LUMBERJACK=1' }
+	mqttc.subspec "ManagerL" do |managerl|
+		managerl.source_files =	"MQTTClient/MQTTSessionManager.{h,m}",
+					"MQTTClient/ReconnectTimer.{h,m}",
+					"MQTTClient/ForegroundReconnection.{h,m}"
+		managerl.dependency "MQTTClient/MinL"
+		managerl.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "LUMBERJACK=1" }
 	end
 
-	mqttc.subspec 'Websocket' do |ws|
-		ws.source_files = "MQTTClient/MQTTClient/MQTTWebsocketTransport/*.{h,m}"
-		ws.dependency 'SocketRocket'
-		ws.dependency 'MQTTClient/Min'
+	mqttc.subspec "Websocket" do |ws|
+		ws.source_files = "MQTTClient/MQTTWebsocketTransport/*.{h,m}"
+		ws.dependency "SocketRocket"
+		ws.dependency "MQTTClient/Min"
 		ws.requires_arc = true
 		ws.libraries = "icucore"
 	end
 
-	mqttc.subspec 'WebsocketL' do |wsl|
-		wsl.source_files = "MQTTClient/MQTTClient/MQTTWebsocketTransport/*.{h,m}"
-		wsl.dependency 'SocketRocket'
-		wsl.dependency 'MQTTClient/MinL'
+	mqttc.subspec "WebsocketL" do |wsl|
+		wsl.source_files = "MQTTClient/MQTTWebsocketTransport/*.{h,m}"
+		wsl.dependency "SocketRocket"
+		wsl.dependency "MQTTClient/MinL"
 		wsl.requires_arc = true
 		wsl.libraries = "icucore"
-		wsl.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'LUMBERJACK=1' }
+		wsl.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "LUMBERJACK=1" }
 	end
 
-	mqttc.subspec 'Proto' do |proto|
-		proto.source_files =	"MQTTClient/MQTTClient/Proto/Symbol.pbobjc.{h,m}"
-		proto.dependency 'Protobuf'
+	mqttc.subspec "Proto" do |proto|
+		proto.source_files =	"MQTTClient/**/*.{h,m}"
+		proto.public_header_files = "MQTTClient/**/*.h"
+		proto.dependency "Protobuf"
 		proto.requires_arc = true
 		proto.libraries = "icucore"
-		proto.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1 ' }
+		proto.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1" }
 	end
+	
 end
