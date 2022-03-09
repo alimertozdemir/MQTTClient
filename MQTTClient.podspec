@@ -20,6 +20,7 @@ Pod::Spec.new do |mqttc|
 	mqttc.subspec "Core" do |core|
 		core.dependency "MQTTClient/Min"
 		core.dependency "MQTTClient/Manager"
+		core.dependency "MQTTClient/Proto"
 	end
 
 	mqttc.subspec "Min" do |min|
@@ -113,5 +114,5 @@ Pod::Spec.new do |mqttc|
 		proto.libraries = "icucore"
 		proto.xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1" }
 	end
-	
+
 end
